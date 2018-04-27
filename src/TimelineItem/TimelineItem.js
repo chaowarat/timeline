@@ -7,12 +7,12 @@ class TimelineItem extends Component {
   render() {
     const { data } = this.props
     if (!data) return null
-    if (data.type === "year") {
+    if (data.type === "text") {
       return <li className="timeline-item period">
         <div className="timeline-info"></div>
         <div className="timeline-marker"></div>
         <div className="timeline-content">
-          <h2 className="timeline-title">{(new Date(data.date)).getFullYear()}</h2>
+          <h2 className="timeline-title">{data.text}</h2>
         </div>
       </li>
     }
@@ -28,7 +28,7 @@ class TimelineItem extends Component {
             className='box-card'
             header={data.images.length === 0 ? null :
               <div className='demo-4 medium'>
-                <Carousel interval='3000' type='card' height='200px'>
+                <Carousel interval={(Math.floor(Math.random() * 6) + 2) * 1000} type='card' height='200px'>
                   {
                     data.images.map((item, index) => (
                       <Carousel.Item key={index}>
