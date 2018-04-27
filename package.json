@@ -1,7 +1,7 @@
 {
-  "homepage": "http://chaowarat.github.io/my-timeline",
-  "name": "my-timeline",
-  "version": "0.1.0",
+  "homepage": "http://chaowarat.github.io/timeline",
+  "name": "timeline",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "element-react": "^1.4.16",
