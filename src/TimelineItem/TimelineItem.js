@@ -46,7 +46,9 @@ class TimelineItem extends Component {
               data.items.map((item, index) => {
                 switch (item.type) {
                   case 'subtitle': return <div key={index} className='text item' style={{ paddingLeft: 20 }}>&#9702; {item.text}</div>
-                  case 'link': return <a key={index} style={{ color: '#2196F3', paddingLeft: 20 }} href={item.link}>&#9702; link</a>
+                  case 'link': return <div key={index} className='text item' style={{ paddingLeft: 20 }}>
+                    <a style={{ color: '#2196F3' }} href={item.link}>&#9702; {item.text || 'link'}</a>
+                  </div>
                   default: return <div key={index} className='text item'>{item.text}</div>
                 }
               })

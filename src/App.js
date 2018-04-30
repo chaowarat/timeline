@@ -15,7 +15,7 @@ class App extends Component {
         <div className="container-fluid">
           <div className="row example-split">
             <div className="col-md-12 example-title">
-              <p>--- 2015 --- 2016 --- 2017 --- 2018 ---</p>
+              <p>--- 2015 --- 2016 --- 2017 --- 2018 --- All ---</p>
             </div>
             <div className="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
               <ul className="timeline timeline-split">
